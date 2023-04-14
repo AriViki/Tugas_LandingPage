@@ -1,22 +1,31 @@
-/* all body syling */
+/* Tambahkan kode CSS kalian di file ini */
 body {
-    background-color: #dbdbdb;
+    background-color: grey;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* all header styling */
 header {
+    margin: 0;
+    padding: 0 20px 0 20px;
     background-color: white;
     color: black;
-    padding: 0 20px 0 20px;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-/* id="logo" styling */
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img {
+    width: 75px;
+}
+
 #logo {
     width: 50px;
     height: 50px;
@@ -31,13 +40,12 @@ header {
     text-decoration: none;
 }
 
-/* class="navbar" styling */
-.navbar img {
-    width: 75px;
-    height: 50px;
+.navbar div {
+    display: flex;
+    align-items: center;
 }
 
-.navbar ul {
+.navbar div ul {
     list-style: none;
     display: flex;
 }
@@ -51,55 +59,6 @@ header {
     text-decoration: none;
 }
 
-/* class="dropdown" styling */
-.dropdown ul {
-	display: none;
-	position:absolute;
-	top: 30px;
-	background-color: white;
-	border: 1px solid #333;
-	padding: 10px;
-}
-
-.dropdown:hover ul {
-    margin-top: 15px;
-	display: block;
-}
-
-.dropdown ul li {
-	margin: 5px 0;
-}
-
-.dropdown ul li a {
-	color: black;
-	text-decoration: none;
-	padding: 5px 0;
-}
-
-/* id="profile" styling */
-#profile {
-	display: flex;
-	align-items: center;
-}
-
-#profile img {
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	margin-right: 10px;
-}
-
-#profile p {
-    background-color: black;
-    border: 10px solid black;
-    border-radius: 24px;
-	font-weight: bold;
-	font-size: 16px;
-    color: white;
-    margin-right: 60px;
-}
-
-/* class="arrow down" styling */
 .arrow {
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -113,74 +72,112 @@ header {
     -webkit-transform: rotate(45deg);
 }
 
-/* ----------------------------------- */
-
-/* all main styling */
-main {
-    margin: 0;
-    padding: 0;
-    display: block;
+#menu ul li{
+    margin-left: 0 30px 0 20px;
 }
 
-#heroBanner{
-    margin: 0;
-    padding: 0;
-    background-image: url("https://remedial.id/wp-content/uploads/2018/07/Untitled-1.jpg");
-	background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    width: 100%;
-	height: 500px;
-	display: flex;
-    position: absolute;
-	align-items: center;
-	justify-content: center;
-    z-index: -1;
+#menu .dropdown ul {
+	display: none;
+	position:absolute;
+	top: 30px;
+	background-color: white;
+	border: 1px solid #333;
+	padding: 10px;
 }
 
-.darkenImage {
-    padding: 50px 0 0 0;
-	background-color: rgba(0, 0, 0, 0.8);
-    background-size: cover;
-	height: 450px;
-	position: absolute;
-	width: 100%;
-    z-index: -1;
+#menu .dropdown:hover ul {
+    margin-top: 15px;
+	display: block;
 }
 
-.heroBannerText {
-    margin: 0;
-    padding: 0;
-    justify-content: center;
+#menu .dropdown ul li {
+	margin: 5px 0;
+}
+
+#menu .dropdown ul li a {
+	color: black;
+	text-decoration: none;
+	padding: 5px 0;
+}
+
+#profile ul a{
+    display: flex;
     align-items: center;
 }
 
-.heroBannerText h2 {
+#profile ul a li{
     margin: 0;
-    text-align: center;
-    color: white;
-    font-size: 24px;
+    padding: 0;
 }
 
-.heroBannerText h1 {
-    margin: 0;
+#profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#description {
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 24px;
+	font-weight: bold;
+	font-size: 16px;
+    color: white;
+    margin-right: 60px;
+}
+
+main {
+    margin: 10px 400px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    border: 2px solid black;
+}
+
+main h1 {
+    margin: 20px;
     text-align: center;
     color: white;
     font-size: 36px;
 }
 
-.heroBannerText button {
-    margin: 10px 140px;
-    padding: 16px 24px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid white;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    display: block;
+main form {
+    display: flex;
+    flex-direction: column;
 }
 
-.heroBannerText button:hover{
-    color: blue;
+main form input {
+    margin: 10px;
+    font-size: 24px;
+}
+
+main form label {
+    margin: 10px;
+    font-size: 20px;
+}
+
+main form button {
+    margin: 10px 300px;
+    font-size: 16px;
+}
+
+#warning {
+    margin: 5px 0 50px 0;
+}
+
+footer {
+    color: aliceblue;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    padding: 10px;
+    color: white;
+}
+
+footer p {
+    color: rgb(150, 150, 150);
 }

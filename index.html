@@ -2,56 +2,69 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Remedial Copy Website</title>
     </head>
     <body>
+        <!-- Tambahkan kode kalian di sini -->
         <header>
-            <nav id="logo" class="navbar">
-                <a href="index.html"><img src="https://www.shutterstock.com/image-vector/r-letter-logo-design-creative-600w-1680271330.jpg" alt="logo"/></a>
-                <a href="index.html"><h1>Remedial</h1></a>
-            </nav>
             <nav class="navbar">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="comingsoon.html">Belajar</a></li>
-                    <li class="dropdown">
-                        <a href="comingsoon.html">Program</a>
-                        <i class="arrow down"></i>
-                        <ul>
-                            <li><a href="comingsoon.html">Program1</a></li>
-                            <li><a href="comingsoon.html">Program2</a></li>
-                            <li><a href="comingsoon.html">Program3</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="comingsoon.html">Tentang</a></li>
-                </ul>
-            </nav>
-            <nav class="navbar">
-                <ul>
-                    <a href="comingsoon.html">
-                    <li id="profile">
-                        <img src="https://www.shutterstock.com/image-vector/man-icon-vector-600w-1040084344.jpg" alt="Profile_Picture">
-                        <p>Profile</p>
-                    </li>
-                    </a>
-                </ul>
+                <div id="logo">
+                    <a href="index.html"><img src="https://www.shutterstock.com/image-vector/r-letter-logo-design-creative-600w-1680271330.jpg" alt="logo"/></a>
+                    <a href="index.html"><h1>Remedial</h1></a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="comingsoon.html">Belajar</a></li>
+                        <li class="dropdown">
+                            <a href="comingsoon.html">Program</a>
+                            <i class="arrow down"></i>
+                            <ul>
+                                <li><a href="comingsoon.html">Program1</a></li>
+                                <li><a href="comingsoon.html">Program2</a></li>
+                                    <li><a href="comingsoon.html">Program3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="comingsoon.html">Tentang</a></li>
+                    </ul>
+                </div>
+                <div id="profile">
+                    <ul>
+                        <a id="link" href="https://skilvul.com">
+                        <li>
+                            <img src="https://www.shutterstock.com/image-vector/man-icon-vector-600w-1040084344.jpg" alt="Profile_Picture">
+                        </li>
+                        <li>
+                            <p id="description">Profile</p>
+                        </li>
+                        </a>
+                    </ul>
+                </div>
             </nav>
         </header>
         <main>
-            <div id="heroBanner">
-                <div class="darkenImage"></div>
-                <div class="heroBannerText">
-                    <h2>-- Remedial --</h2>
-                    <br><h1>Kembangkan Pengetahuan dan<br>Belajar dari Mentor Terbaik</h1>
-                    <br><button>Saya Ingin Belajar Sekarang!</button>
-                </div>
-            </div>
+                <h1>Registration Form</h1>
+                <form onsubmit="return handleGetFormData()">
+                    <input type="text" id="name" name="name" placeholder="name" required>
+                    <input type="text" id="city" name="city" placeholder="city" required>
+                    <input type="email" id="email" name="email" placeholder="email" required>
+                    <input type="number" id="zip-code" name="zip" placeholder="zip-code" required>
+                    <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                    <input type="checkbox" id="status" required>
+                    <button type="submit" id="submit-form" onclick="submit()">Submit</button>
+                    <div id="warning"><div>
+                </form>
         </main>
         <footer>
-
+            <a href="#">Facebook</a>
+            <a href="https://www.instagram.com/ari_viki/">Instagram</a>
+            <a href="https://github.com/AriViki">GitHub</a>
+            <a href="https://www.linkedin.com/in/ari-viki-firmansyah-173506271/">LinkedIn</a>
+            <p>&copy; 2023 Ari Viki Firmansyah Personal Website</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
