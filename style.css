@@ -116,6 +116,12 @@ header {
 /* ----------------------------------- */
 
 /* all main styling */
+main {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
 #heroBanner{
     margin: 0;
     padding: 0;
