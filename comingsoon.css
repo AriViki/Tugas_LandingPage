@@ -1,0 +1,134 @@
+/* all body syling */
+body {
+    background-color: #dbdbdb;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* all header styling */
+header {
+    background-color: white;
+    color: black;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* id="logo" styling */
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#logo a {
+    color: black;
+    text-decoration: none;
+}
+
+/* class="navbar" styling */
+.navbar img {
+    width: 75px;
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px 0 30px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* class="dropdown" styling */
+.dropdown ul {
+	display: none;
+	position:absolute;
+	top: 30px;
+	background-color: white;
+	border: 1px solid #333;
+	padding: 10px;
+}
+
+.dropdown:hover ul {
+    margin-top: 15px;
+	display: block;
+}
+
+.dropdown ul li {
+	margin: 5px 0;
+}
+
+.dropdown ul li a {
+	color: black;
+	text-decoration: none;
+	padding: 5px 0;
+}
+
+/* id="profile" styling */
+#profile {
+	display: flex;
+	align-items: center;
+}
+
+#profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#profile p {
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 24px;
+	font-weight: bold;
+	font-size: 16px;
+    color: white;
+    margin-right: 60px;
+}
+
+/* class="arrow down" styling */
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 3px 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+main {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    padding: 200px 0 270px 0;
+}
+
+main a {
+    margin: 20px;
+    color: black;
+    font-size: 54px;
+    text-decoration: none;
+    display: block;
+}
+
+main button a{
+    margin: 10px;
+    font-size: 36px;
+}

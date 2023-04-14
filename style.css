@@ -1,0 +1,180 @@
+/* all body syling */
+body {
+    background-color: #dbdbdb;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* all header styling */
+header {
+    background-color: white;
+    color: black;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* id="logo" styling */
+#logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 50px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+#logo a {
+    color: black;
+    text-decoration: none;
+}
+
+/* class="navbar" styling */
+.navbar img {
+    width: 75px;
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px 0 30px;
+}
+
+.navbar ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* class="dropdown" styling */
+.dropdown ul {
+	display: none;
+	position:absolute;
+	top: 30px;
+	background-color: white;
+	border: 1px solid #333;
+	padding: 10px;
+}
+
+.dropdown:hover ul {
+    margin-top: 15px;
+	display: block;
+}
+
+.dropdown ul li {
+	margin: 5px 0;
+}
+
+.dropdown ul li a {
+	color: black;
+	text-decoration: none;
+	padding: 5px 0;
+}
+
+/* id="profile" styling */
+#profile {
+	display: flex;
+	align-items: center;
+}
+
+#profile img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#profile p {
+    background-color: black;
+    border: 10px solid black;
+    border-radius: 24px;
+	font-weight: bold;
+	font-size: 16px;
+    color: white;
+    margin-right: 60px;
+}
+
+/* class="arrow down" styling */
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin: 0 0 3px 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+/* ----------------------------------- */
+
+/* all main styling */
+#heroBanner{
+    margin: 0;
+    padding: 0;
+    background-image: url("https://remedial.id/wp-content/uploads/2018/07/Untitled-1.jpg");
+	background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    width: 100%;
+	height: 500px;
+	display: flex;
+    position: absolute;
+	align-items: center;
+	justify-content: center;
+    z-index: -1;
+}
+
+.darkenImage {
+    padding: 50px 0 0 0;
+	background-color: rgba(0, 0, 0, 0.8);
+    background-size: cover;
+	height: 450px;
+	position: absolute;
+	width: 100%;
+    z-index: -1;
+}
+
+.heroBannerText {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroBannerText h2 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.heroBannerText h1 {
+    margin: 0;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+.heroBannerText button {
+    margin: 10px 140px;
+    padding: 16px 24px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    display: block;
+}
+
+.heroBannerText button:hover{
+    color: blue;
+}
